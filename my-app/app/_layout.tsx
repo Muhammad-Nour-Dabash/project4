@@ -8,6 +8,8 @@ import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import CoreComponents from "@/components/CoreComponents";
 import UserInterfaceComponents from "@/components/UserInterfaceComponents";
+import { useEffect } from "react";
+import { Alert, BackHandler } from "react-native";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
