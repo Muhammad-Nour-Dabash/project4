@@ -4,12 +4,9 @@ import {
   ThemeProvider,
 } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { ScrollView, View } from "react-native";
-import { Text } from "react-native-gesture-handler";
+import CoreComponents from "@/components/CoreComponents";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -29,11 +26,8 @@ export default function RootLayout() {
       {/* <Stack.Screen name="+not-found" /> */}
       {/* </Stack> */}
       {/* <StatusBar style="inverted" /> */}
-      <View>
-        <ScrollView>
-          <Text>Hello World</Text>
-        </ScrollView>
-      </View>
+
+      <CoreComponents />
     </ThemeProvider>
   );
 }
