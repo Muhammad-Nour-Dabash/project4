@@ -7,6 +7,7 @@ import { useFonts } from "expo-font";
 import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import CoreComponents from "@/components/CoreComponents";
+import UserInterfaceComponents from "@/components/UserInterfaceComponents";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -26,8 +27,8 @@ export default function RootLayout() {
       {/* <Stack.Screen name="+not-found" /> */}
       {/* </Stack> */}
       {/* <StatusBar style="inverted" /> */}
-
-      <CoreComponents />
+      {/* <CoreComponents /> */}
+      <UserInterfaceComponents />
     </ThemeProvider>
   );
 }
