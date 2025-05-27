@@ -6,10 +6,7 @@ import {
 import { useFonts } from "expo-font";
 import "react-native-reanimated";
 import { useColorScheme } from "@/hooks/useColorScheme";
-import CoreComponents from "@/components/CoreComponents";
-import UserInterfaceComponents from "@/components/UserInterfaceComponents";
-import { useEffect } from "react";
-import { Alert, BackHandler } from "react-native";
+import OtherComponents from "@/components/OtherComponents";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -30,7 +27,8 @@ export default function RootLayout() {
       {/* </Stack> */}
       {/* <StatusBar style="inverted" /> */}
       {/* <CoreComponents /> */}
-      <UserInterfaceComponents />
+      {/* <UserInterfaceComponents /> */}
+      <OtherComponents />
     </ThemeProvider>
   );
 }
