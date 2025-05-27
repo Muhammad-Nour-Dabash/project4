@@ -1,2 +1,2 @@
 npx create-expo-app@latest
-    
+npm install @react-navigation/native-stack
