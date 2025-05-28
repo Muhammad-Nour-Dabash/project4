@@ -10,7 +10,6 @@ import nft09 from "../assets/images/nft09.jpg";
 import nft10 from "../assets/images/nft10.jpg";
 import nft11 from "../assets/images/nft11.jpg";
 import nft12 from "../assets/images/nft12.jpg";
-import avatar01 from "../assets/images/avatars/avatar01.jpg";
 import avatar02 from "../assets/images/avatars/avatar02.jpg";
 import avatar03 from "../assets/images/avatars/avatar03.jpg";
 export const DATA = [
@@ -29,7 +28,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -49,7 +47,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -69,7 +66,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -89,7 +85,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -109,7 +104,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -129,7 +123,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -149,7 +142,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -169,7 +161,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -189,7 +180,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -209,7 +199,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -229,7 +218,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],
@@ -250,7 +238,6 @@ export const DATA = [
     tokenSt: "ERC-721",
     blockchain: "Ethereun",
     avatars: [
-      { id: "1", image: avatar01 },
       { id: "2", image: avatar02 },
       { id: "3", image: avatar03 },
     ],

@@ -2,9 +2,13 @@ import React from "react";
 import { View, Text, Image, TextInput, StyleSheet } from "react-native";
 import { COLORS, FONTS, SIZES } from "../constants";
 import avatar from "../assets/images/avatars/avatar03.jpg";
-import { MaterialIcons } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-const HomeHeader = ({searchHandler}) => {
+import { MaterialIcons, MaterialCommunityIcons } from "@expo/vector-icons";
+
+type HomeHeaderProps = {
+  searchHandler: (text: string) => void;
+};
+
+const HomeHeader = ({ searchHandler }: HomeHeaderProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -24,9 +28,7 @@ const HomeHeader = ({searchHandler}) => {
               color="white"
             />
           </View>
-          <View>
-            <Text style={{ color: COLORS.white }}>Creator</Text>
-          </View>
+          <Text style={{ color: COLORS.white }}>Creator</Text>
         </View>
       </View>
       <View style={{ marginTop: SIZES.small, paddingHorizontal: 10 }}>
@@ -50,7 +52,6 @@ const styles = StyleSheet.create({
   container: {
     padding: SIZES.small,
   },
-
   header: {
     flexDirection: "row",
     alignItems: "center",
