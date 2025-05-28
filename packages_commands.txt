@@ -1,3 +1,4 @@
 npx create-expo-app@latest
 npm install @react-navigation/native-stack
-npm install @shopify/flash-list
+npm install -g eas-cli
+npx expo install expo-image-picker

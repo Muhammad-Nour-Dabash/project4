@@ -13,7 +13,7 @@ import { COLORS } from "../constants";
 import PrimaryButton from "./PrimaryButton";
 
 type NFTImageProps = {
-  image: ImageSourcePropType;
+  image?: ImageSourcePropType | string | null;
   imageStyles?: StyleProp<ImageStyle>;
   love?: boolean;
   arrow?: boolean;
@@ -27,9 +27,27 @@ const NFTImage = ({
   arrow,
   pressHandler,
 }: NFTImageProps) => {
+  const renderContent = () => {
+    if (!image) {
+      return (
+        <View style={[styles.placeholder, imageStyles]}>
+          <Feather name="image" size={48} color={COLORS.gray} />
+        </View>
+      );
+    }
+
+    return (
+      <Image
+        source={typeof image === "string" ? { uri: image } : image}
+        style={imageStyles}
+        resizeMode="cover"
+      />
+    );
+  };
+
   return (
     <View style={styles.container}>
-      <Image source={image} style={imageStyles} resizeMode="cover" />
+      {renderContent()}
       {love && (
         <PrimaryButton
           style={styles.buttonHeart}
@@ -42,7 +60,7 @@ const NFTImage = ({
           style={styles.buttonArrow}
           icon={<Feather name="arrow-left" size={20} color={COLORS.second} />}
           onPress={() => {
-            pressHandler!();
+            pressHandler?.();
           }}
         />
       )}
@@ -54,6 +72,11 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     position: "relative",
+  },
+  placeholder: {
+    backgroundColor: "#eee",
+    justifyContent: "center",
+    alignItems: "center",
   },
   buttonHeart: {
     position: "absolute",
