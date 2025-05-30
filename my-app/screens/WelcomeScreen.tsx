@@ -6,7 +6,6 @@ import {
   Image,
   Animated,
   SafeAreaView,
-  Pressable,
 } from "react-native";
 import { COLORS, FONTS, SIZES } from "../constants";
 import nft08 from "../assets/images/nft08.jpg";
